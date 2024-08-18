@@ -52,4 +52,4 @@ Pull request are welcome. As this is my first Dockerfile, there might be a of th
 * etc.
 
 ## License
-[MIT] (https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)
