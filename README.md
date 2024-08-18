@@ -1,7 +1,9 @@
 # ProjeQtOr
 
-This project is building a docker image based on Apache/PHP8.1 as well as MySQL server. It will build and run two docker container for PHP and MySQL.
-It will pull ProjeQtOr V11.3.1 from Sourceforge and build an image
+ProjectQtOr is a Browser based,  open source project management solution to manage and run all kind of projects. [HomePage of ProjeQtOr](https://www.projeqtor.org/en/)
+
+This Github project is to build a docker image based on Apache/PHP8.1 and  MySQL to run ProjeQtOr in dockerized environment. 
+It will pull ProjeQtOr V11.3.1 from Sourceforge
 
 ## Installation
 You just need to clone the repository, then add a mypass.env file while renaming the sample file and adjust the content with a more secure root password.
@@ -42,14 +44,14 @@ Change the admin password, setup a new Client, Users, and create a new Project
 
 Enjoy.
 
-## Contributing
-Pull request are welcome. As this is my first Dockerfile, there might be a of things to be improved (see to be fixed section).
-
 ## To-Be fixed:
 * Credenitals (root) for MySQL connections
 * Dynamically download of the latest ProjeQtOr zipfile from Sourceforge
 * Docker build process improvement
 * etc.
+
+## Contributing
+Pull request are welcome. As this is my first Dockerfile, there might be a of things to be improved (see to be fixed section).
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
