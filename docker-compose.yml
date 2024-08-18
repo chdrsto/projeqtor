@@ -1,0 +1,18 @@
+services:
+  php-apache:
+    ports:
+      - "80:80"
+    build: './build/php'
+    volumes:
+      - appData:/var/www/html
+  mysql:
+    ports:
+      - "3306:3306"
+    build: './build/mysql'
+    env_file: "./config/mypass.env"
+    volumes:
+      - dbData:/var/lib/mysql
+      - ./mysql/config/:/etc/mysql/conf.d
+volumes:
+  appData:
+  dbData:

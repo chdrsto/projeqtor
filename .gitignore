@@ -1,0 +1,4 @@
+# Ignoring env files
+*.env
+.DS_Store
+*.zip
