@@ -7,10 +7,21 @@ RUN apt-get update && \
 	docker-php-ext-install mysqli pdo pdo_mysql zip xml 
 
 ADD ./files/parameter.ini /usr/local/etc/php/conf.d/
-#ADD ./files/projeqtorV11.3.1.zip /var/www/html/
+ADD ./files/projeqtorV11.3.1.zip /var/www/html/
 
 WORKDIR /var/www/html
 RUN wget -nc https://downloads.sourceforge.net/project/projectorria/projeqtorV11.3.1.zip
 RUN unzip projeqtorV11.3.1.zip
+RUN mkdir -p files/attach
+RUN mkdir -p files/documents
+RUN mkdir -p files/logs
+RUN mkdir -p files/config
 RUN chown -R www-data: projeqtor
+RUN chown -R www-data: files
+RUN chmod 770 files
+RUN chmod 770 files/attach
+RUN chmod 770 files/documents
+RUN chmod 770 files/logs
+RUN chmod 770 files/config
+
 
